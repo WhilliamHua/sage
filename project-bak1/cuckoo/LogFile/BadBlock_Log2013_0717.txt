@@ -1,0 +1,53 @@
+--------------------------------------------------------------------------------
+Port0,Time: 2013-07-17  11:09:09
+Chip Number:1
+chip manufacture = MICRON
+chip ID = 2C_68_04_4A_A9_FF
+chip capacity = 4GB
+channel number  = 1
+plane number  = 2
+UID:9A A2 4B 97 31 79 C0 CD FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Port0,Time: 2013-07-17  15:51:24
+Chip Number:16
+chip manufacture = MICRON
+chip ID = 2C_68_00_27_A9_FF
+chip capacity = 8GB
+channel number  = 8
+plane number  = 1
+UID:82 F2 E1 35 B8 F9 00 6F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 E1 50 30 F8 00 2F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 E1 15 B0 F9 00 0F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 E1 70 30 F8 00 0F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 E1 3A A0 F9 00 6F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 61 FC 50 F9 00 4F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 E1 1A A0 F9 00 4F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 61 FC 40 F9 00 0F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:42 5C 4D 33 C8 F9 C0 FE FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:0A 00 CE 1C D0 F8 C0 BE FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:42 5C 4D 53 C8 F9 C0 FE FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:3
+UID:0A 00 CE 3C D0 F8 C0 9E FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 E1 38 48 F8 00 0F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 E1 56 58 F9 00 2F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 E1 58 48 F8 00 0F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 E1 36 58 F9 00 2F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:0A 00 CE BC 90 F8 C0 FE FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:42 5C 4D F4 18 F9 C0 9E FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:0A 00 CE DC 90 F8 C0 FE FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:42 5C 4D D4 18 F9 C0 BE FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 E1 97 78 F8 00 0F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 E1 34 70 F8 00 4F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 E1 77 78 F8 00 2F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 E1 54 70 F8 00 4F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:3
+UID:42 5C 4D B3 50 F9 C0 9E FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 61 9C 30 F8 00 0F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:42 5C 4D D3 50 F9 C0 9E FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 61 BC 40 F8 00 6F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 E1 7C 38 F8 00 4F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 E1 18 10 F8 00 6F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:82 F2 E1 5C 38 F8 00 6F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:3
+UID:82 F2 E1 38 10 F8 00 4F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+--------------------------------------------------------------------------------
+

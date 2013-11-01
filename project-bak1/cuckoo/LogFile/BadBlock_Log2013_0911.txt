@@ -1,0 +1,30 @@
+--------------------------------------------------------------------------------
+Port0,Time: 2013-09-11  14:27:17
+Chip Number:10
+chip manufacture = MICRON
+chip ID = 2C_88_04_4B_A9_FF
+chip capacity = 16GB
+channel number  = 10
+plane number  = 1
+UID:72 C6 E3 93 68 F9 A0 1F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:12 CB E3 BA 38 F9 A0 2F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:72 C6 E3 D3 68 F9 A0 3F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:12 CB E3 9A 38 F9 A0 0F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:12 CB E3 5A 20 F9 A0 0F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:12 CB 63 37 08 F9 A0 0F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:12 CB E3 3A 20 F9 A0 0F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:12 CB 63 57 08 F9 A0 0F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:12 CB 63 D7 18 F9 A0 6F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:12 CB E3 7A 10 F9 A0 2F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:12 CB 63 B7 18 F9 A0 6F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:12 CB E3 9A 10 F9 A0 0F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:12 CB E3 3A 30 F9 A0 4F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:12 CB E3 BA 60 F9 A0 6F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:12 CB E3 5A 30 F9 A0 4F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:12 CB E3 9A 60 F9 A0 4F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:72 C6 E3 B3 80 F9 A0 3F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:12 CB E3 7A 48 F8 A0 2F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:72 C6 E3 93 80 F9 A0 1F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+UID:12 CB E3 9A 48 F8 A0 0F FF 00 FF 00 FF 00 FF 00 ; Original Bad Block:2
+--------------------------------------------------------------------------------
+

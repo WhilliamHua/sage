@@ -1,0 +1,4 @@
+"STARTUP.obj",
+".\shark.obj" 
+TO "shark" 
+RAMSIZE(256) 

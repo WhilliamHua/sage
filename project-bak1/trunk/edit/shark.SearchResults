@@ -1,0 +1,14 @@
+---- g_flag_lba_err Matches (13 in 3 files) ----
+Ata_cmd.c (e:\s681\project-system\trunk - 副本\src):	g_flag_lba_err = 0;
+Ata_cmd.c (e:\s681\project-system\trunk - 副本\src):	if(SFR_lba_comp & lba_up_exceed) myprintf("\nLBAext \n");//g_flag_lba_err = 1;
+Ata_cmd.c (e:\s681\project-system\trunk - 副本\src):		if(temp16.word > (max_cylnd-1))g_flag_lba_err = 1;			//invalid cylinder
+Ata_cmd.c (e:\s681\project-system\trunk - 副本\src):		if((sata.FIS_device & 0x0f) > (max_head_per_cylnd -1))g_flag_lba_err = 1;	//invalid head
+Ata_cmd.c (e:\s681\project-system\trunk - 副本\src):		if(sata.FIS_lba_low > max_sec_per_head)g_flag_lba_err = 1; //invalid sector
+Ata_cmd.c (e:\s681\project-system\trunk - 副本\src):		if(sata.FIS_lba_low == 0)g_flag_lba_err = 1;
+Ata_cmd.c (e:\s681\project-system\trunk - 副本\src):    if(g_flag_lba_err)goto pio_handler_err; 
+Ata_cmd.c (e:\s681\project-system\trunk - 副本\src):    if(g_flag_lba_err)goto pio_handler_err; 
+Common.h (e:\s681\project-system\trunk - 副本\src):	sbit g_flag_lba_err 	= g_flag ^ 0;
+Shark.c (e:\s681\project-system\trunk - 副本\src):                             if(g_flag_lba_err)
+Shark.c (e:\s681\project-system\trunk - 副本\src):                                if(g_flag_lba_err) tx_fis_34(status_bad,error_abort, int_set);
+Shark.c (e:\s681\project-system\trunk - 副本\src):                                if(g_flag_lba_err) tx_fis_34(status_bad,error_abort, int_set);
+Shark.c (e:\s681\project-system\trunk - 副本\src):                                if(g_flag_lba_err) tx_fis_34(status_bad,error_abort, int_set);

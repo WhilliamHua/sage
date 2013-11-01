@@ -1,0 +1,313 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+Z:\trunk - 副本\proj\shark.uvproj
+Project File Date:  07/25/2013
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZE_STATES?SHARK
+*** WARNING L15: MULTIPLE CALL TO SEGMENT
+    SEGMENT: ?PR?_PRINTU?SHARK
+    CALLER1: ?C_C51STARTUP
+    CALLER2: ?PR?INT1_HANDLER?SHARK
+Program Size: data=177.0 xdata=248 code=11786
+creating hex file from "shark"...
+User command #1: "Z:\trunk - 副本\proj\Bulid.bat"
+Z:\trunk - 副本\proj>call keil_build.bat 
+Z:\trunk - 副本\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+Z:\trunk - 副本\proj>SET C51LIB=C:\Keil905\C51\LIB 
+Z:\trunk - 副本\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+Z:\trunk - 副本\proj>SET CPU_VENDOR=Evatronix 
+Z:\trunk - 副本\proj>SET UV2_TARGET=Target 1 
+Z:\trunk - 副本\proj>SET CPU_XTAL=0x016E3600 
+Z:\trunk - 副本\proj>rem if use dw8051 
+Z:\trunk - 副本\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+Z:\trunk - 副本\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+Z:\trunk - 副本\proj>rem SET CPU_TYPE=DW-8051 
+Z:\trunk - 副本\proj>rem SET CPU_VENDOR=Synopsys 
+Z:\trunk - 副本\proj>rem SET UV2_TARGET=Target 1 
+Z:\trunk - 副本\proj>rem SET CPU_XTAL=0x00B71B00 
+Z:\trunk - 副本\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+Z:\trunk - 副本\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+Z:\trunk - 副本\proj>color 79 
+Z:\trunk - 副本\proj>echo ******************************************* 
+*******************************************
+Z:\trunk - 副本\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+Z:\trunk - 副本\proj>echo ******************************************* 
+*******************************************
+Z:\trunk - 副本\proj>pause
+请按任意键继续. . . 
+Z:\trunk - 副本\proj>color 07 
+Z:\trunk - 副本\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+Z:\trunk - 副本\proj>del *.img 
+找不到 Z:\trunk - 副本\proj\*.img
+Z:\trunk - 副本\proj>del *.upd 
+找不到 Z:\trunk - 副本\proj\*.upd
+Z:\trunk - 副本\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+Z:\trunk - 副本\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = 54
+Z:\trunk - 副本\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>..\util\bin2txt.exe  
+Z:\trunk - 副本\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>..\util\add_setting.exe
+Z:\trunk - 副本\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>rem insert identify data 
+Z:\trunk - 副本\proj>..\util\write_identify_data.exe
+Z:\trunk - 副本\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>..\util\HexGoSUPv1.26
+Z:\trunk - 副本\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>copy SUP.v ..\..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+Z:\trunk - 副本\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+Z:\trunk - 副本\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+介质受写入保护。
+已复制         0 个文件。
+Z:\trunk - 副本\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+Z:\trunk - 副本\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+Z:\trunk - 副本\proj>pause
+请按任意键继续. . . 
+Z:\trunk - 副本\proj>exit
+"shark" - 0 Error(s), 2 Warning(s).
+Rebuild target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+..\src\ata_cmd.c(891): error C204: 'h': undefined member
+..\src\ata_cmd.c(893): error C204: 'l': undefined member
+..\src\ata_cmd.c(894): error C204: 'h': undefined member
+..\src\ata_cmd.c(897): error C204: 'h': undefined member
+..\src\ata_cmd.c(899): error C204: 'l': undefined member
+..\src\ata_cmd.c(900): error C204: 'h': undefined member
+..\src\ata_cmd.c(903): error C204: 'h': undefined member
+..\src\ata_cmd.c(905): error C204: 'l': undefined member
+..\src\ata_cmd.c(906): error C204: 'h': undefined member
+Target not created
+Rebuild target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+..\src\ata_cmd.c(891): error C204: 'h': undefined member
+..\src\ata_cmd.c(893): error C204: 'l': undefined member
+..\src\ata_cmd.c(894): error C204: 'h': undefined member
+..\src\ata_cmd.c(897): error C204: 'h': undefined member
+..\src\ata_cmd.c(899): error C204: 'l': undefined member
+..\src\ata_cmd.c(900): error C204: 'h': undefined member
+..\src\ata_cmd.c(903): error C204: 'h': undefined member
+..\src\ata_cmd.c(905): error C204: 'l': undefined member
+..\src\ata_cmd.c(906): error C204: 'h': undefined member
+Target not created
+Rebuild target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+..\src\ata_cmd.c(894): error C204: 'h': undefined member
+..\src\ata_cmd.c(900): error C204: 'h': undefined member
+..\src\ata_cmd.c(906): error C204: 'h': undefined member
+Target not created
+Rebuild target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+..\src\ata_cmd.c(894): error C204: 'h': undefined member
+..\src\ata_cmd.c(900): error C204: 'h': undefined member
+..\src\ata_cmd.c(906): error C204: 'h': undefined member
+Target not created
+Rebuild target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZE_STATES?SHARK
+*** WARNING L15: MULTIPLE CALL TO SEGMENT
+    SEGMENT: ?PR?_PRINTU?SHARK
+    CALLER1: ?C_C51STARTUP
+    CALLER2: ?PR?INT1_HANDLER?SHARK
+Program Size: data=177.0 xdata=248 code=11855
+creating hex file from "shark"...
+User command #1: "Z:\trunk - 副本\proj\Bulid.bat"
+Z:\trunk - 副本\proj>call keil_build.bat 
+Z:\trunk - 副本\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+Z:\trunk - 副本\proj>SET C51LIB=C:\Keil905\C51\LIB 
+Z:\trunk - 副本\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+Z:\trunk - 副本\proj>SET CPU_VENDOR=Evatronix 
+Z:\trunk - 副本\proj>SET UV2_TARGET=Target 1 
+Z:\trunk - 副本\proj>SET CPU_XTAL=0x016E3600 
+Z:\trunk - 副本\proj>rem if use dw8051 
+Z:\trunk - 副本\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+Z:\trunk - 副本\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+Z:\trunk - 副本\proj>rem SET CPU_TYPE=DW-8051 
+Z:\trunk - 副本\proj>rem SET CPU_VENDOR=Synopsys 
+Z:\trunk - 副本\proj>rem SET UV2_TARGET=Target 1 
+Z:\trunk - 副本\proj>rem SET CPU_XTAL=0x00B71B00 
+Z:\trunk - 副本\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+Z:\trunk - 副本\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+Z:\trunk - 副本\proj>color 79 
+Z:\trunk - 副本\proj>echo ******************************************* 
+*******************************************
+Z:\trunk - 副本\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+Z:\trunk - 副本\proj>echo ******************************************* 
+*******************************************
+Z:\trunk - 副本\proj>pause
+请按任意键继续. . . 
+Z:\trunk - 副本\proj>color 07 
+Z:\trunk - 副本\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+Z:\trunk - 副本\proj>del *.img 
+找不到 Z:\trunk - 副本\proj\*.img
+Z:\trunk - 副本\proj>del *.upd 
+找不到 Z:\trunk - 副本\proj\*.upd
+Z:\trunk - 副本\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+Z:\trunk - 副本\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = CE
+Z:\trunk - 副本\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>..\util\bin2txt.exe  
+Z:\trunk - 副本\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>..\util\add_setting.exe
+Z:\trunk - 副本\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>rem insert identify data 
+Z:\trunk - 副本\proj>..\util\write_identify_data.exe
+Z:\trunk - 副本\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>..\util\HexGoSUPv1.26
+Z:\trunk - 副本\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>copy SUP.v ..\..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+Z:\trunk - 副本\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+Z:\trunk - 副本\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+介质受写入保护。
+已复制         0 个文件。
+Z:\trunk - 副本\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+Z:\trunk - 副本\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+Z:\trunk - 副本\proj>pause
+请按任意键继续. . . 
+Z:\trunk - 副本\proj>exit
+"shark" - 0 Error(s), 2 Warning(s).
+Rebuild target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZE_STATES?SHARK
+*** WARNING L15: MULTIPLE CALL TO SEGMENT
+    SEGMENT: ?PR?_PRINTU?SHARK
+    CALLER1: ?C_C51STARTUP
+    CALLER2: ?PR?INT1_HANDLER?SHARK
+Program Size: data=177.0 xdata=248 code=11855
+creating hex file from "shark"...
+User command #1: "Z:\trunk - 副本\proj\Bulid.bat"
+Z:\trunk - 副本\proj>call keil_build.bat 
+Z:\trunk - 副本\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+Z:\trunk - 副本\proj>SET C51LIB=C:\Keil905\C51\LIB 
+Z:\trunk - 副本\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+Z:\trunk - 副本\proj>SET CPU_VENDOR=Evatronix 
+Z:\trunk - 副本\proj>SET UV2_TARGET=Target 1 
+Z:\trunk - 副本\proj>SET CPU_XTAL=0x016E3600 
+Z:\trunk - 副本\proj>rem if use dw8051 
+Z:\trunk - 副本\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+Z:\trunk - 副本\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+Z:\trunk - 副本\proj>rem SET CPU_TYPE=DW-8051 
+Z:\trunk - 副本\proj>rem SET CPU_VENDOR=Synopsys 
+Z:\trunk - 副本\proj>rem SET UV2_TARGET=Target 1 
+Z:\trunk - 副本\proj>rem SET CPU_XTAL=0x00B71B00 
+Z:\trunk - 副本\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+Z:\trunk - 副本\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+Z:\trunk - 副本\proj>color 79 
+Z:\trunk - 副本\proj>echo ******************************************* 
+*******************************************
+Z:\trunk - 副本\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+Z:\trunk - 副本\proj>echo ******************************************* 
+*******************************************
+Z:\trunk - 副本\proj>pause
+请按任意键继续. . . 
+Z:\trunk - 副本\proj>color 07 
+Z:\trunk - 副本\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+Z:\trunk - 副本\proj>del *.img 
+找不到 Z:\trunk - 副本\proj\*.img
+Z:\trunk - 副本\proj>del *.upd 
+找不到 Z:\trunk - 副本\proj\*.upd
+Z:\trunk - 副本\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+Z:\trunk - 副本\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = CE
+Z:\trunk - 副本\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>..\util\bin2txt.exe  
+Z:\trunk - 副本\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>..\util\add_setting.exe
+Z:\trunk - 副本\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>rem insert identify data 
+Z:\trunk - 副本\proj>..\util\write_identify_data.exe
+Z:\trunk - 副本\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>..\util\HexGoSUPv1.26
+Z:\trunk - 副本\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>copy SUP.v ..\..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+Z:\trunk - 副本\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+Z:\trunk - 副本\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+Z:\trunk - 副本\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+介质受写入保护。
+已复制         0 个文件。
+Z:\trunk - 副本\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+Z:\trunk - 副本\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+Z:\trunk - 副本\proj>pause
+请按任意键继续. . . 
+Z:\trunk - 副本\proj>exit
+"shark" - 0 Error(s), 2 Warning(s).

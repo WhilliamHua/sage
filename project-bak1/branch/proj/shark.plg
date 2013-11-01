@@ -1,0 +1,2318 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\Project\project_bak\project-bak1.1\branch\proj\shark.uvproj
+Project File Date:  10/22/2013
+
+<h2>Output:</h2>
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SECURITY_CHECK_LBA_BAK?SHARK
+Program Size: data=159.0 xdata=248 code=12351
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = D6
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling shark.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CHOOSE_LBA?SHARK
+Program Size: data=159.0 xdata=248 code=12276
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = C0
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CHOOSE_LBA?SHARK
+Program Size: data=159.0 xdata=248 code=12276
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = C0
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling shark.c...
+linking...
+Program Size: data=159.0 xdata=248 code=12278
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = 22
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+linking...
+Program Size: data=159.0 xdata=248 code=12278
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = 22
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=159.0 xdata=248 code=12278
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = 22
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+linking...
+Program Size: data=159.0 xdata=248 code=12278
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = 22
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling shark.c...
+linking...
+Program Size: data=159.0 xdata=248 code=12283
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = 9F
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+linking...
+Program Size: data=159.0 xdata=248 code=12283
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = 9F
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=159.0 xdata=248 code=12283
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = 9F
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling shark.c...
+linking...
+Program Size: data=159.0 xdata=248 code=12283
+creating hex file from "shark"...
+User command #1: D:\Project\windows_app\project-ydxit_3_2_2\branch\proj\Bulid.bat
+D:\Project\project_bak\project-bak1.1\branch\proj>call keil_build.bat 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51INC=C:\Keil905\C51\INC\Evatronix\;C\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_TYPE=R8051XC (1 DPTR) 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_VENDOR=Evatronix 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>SET CPU_XTAL=0x016E3600 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem if use dw8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51INC=C:\Keil905\C51\INC\Dallas\;C:\Keil905\C51\INC\ 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET C51LIB=C:\Keil905\C51\LIB 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_TYPE=DW-8051 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_VENDOR=Synopsys 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET UV2_TARGET=Target 1 
+D:\Project\project_bak\project-bak1.1\branch\proj>rem SET CPU_XTAL=0x00B71B00 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\A51.EXE" @STARTUP._ia 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\C51.EXE" @.\shark.__i 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>color 79 
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\BL51.EXE" @shark.lnp 
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>echo ******************************************* 
+*******************************************
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>color 07 
+D:\Project\project_bak\project-bak1.1\branch\proj>"C:\Keil905\C51\BIN\OH51.EXE" "shark"  
+系统找不到指定的路径。
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.img 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.img
+D:\Project\project_bak\project-bak1.1\branch\proj>del *.upd 
+找不到 D:\Project\project_bak\project-bak1.1\branch\proj\*.upd
+D:\Project\project_bak\project-bak1.1\branch\proj>rem ..\util\hex2bin /L32766  shark.hex shark.upd 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\hex2bin-new  -l 8000  -e upd shark.hex 
+hex2bin v1.0.10, Copyright (C) 2012 Jacques Pelletier & contributors
+Lowest address  = 00000000
+Highest address = 00007FFF
+Pad Byte        = FF
+8-bit Checksum = 9F
+D:\Project\project_bak\project-bak1.1\branch\proj>copy shark.upd RAM.UPD 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\bin2txt.exe  
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-DW.IMG RAM.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\add_setting.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy RAM-ADD-SETTING.v  ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>rem insert identify data 
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\write_identify_data.exe
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051_after_ident.v ram8051nocrc.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>..\util\HexGoSUPv1.26
+D:\Project\project_bak\project-bak1.1\branch\proj>copy ram8051.v SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\cuckoo\CODE\SUP\SUP.v 
+已复制         1 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\SUP_release\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v F:\work\S685\design\tb\bench\SUP_ROM.rcf 
+设备未就绪。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>copy SUP.v ..\..\..\MPTool_Release\Cuckoo\CODE\SUP\SUP.v 
+系统找不到指定的路径。
+已复制         0 个文件。
+D:\Project\project_bak\project-bak1.1\branch\proj>del shark.hex shark.upd ram8051.bta ram8051.v ram8051_after_ident.v ram8051nocrc.v  RAM.UPD  RAM-BYTE.IMG RAM-DW.IMG RAM-ADD-SETTING.v S681_RAM.bta 
+D:\Project\project_bak\project-bak1.1\branch\proj>pause
+请按任意键继续. . . 
+D:\Project\project_bak\project-bak1.1\branch\proj>exit
+"shark" - 0 Error(s), 0 Warning(s).
