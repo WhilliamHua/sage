@@ -35,7 +35,7 @@ void main()
 	 
 	 /* wait EFM32 to choose a partition or ATA password is supported*/
 	 #ifdef GPIO_security
-	GPIO_security_init();	 
+	  GPIO_security_init();	 
 	 //security_nd_chk = security_cmd_info_read(scl_security_nd_chk);//security function need or not 
 	 //myprintf("\nsysmode:%c",security_nd_chk);
 	 
@@ -68,7 +68,7 @@ void main()
 		  GPIO_security_cmd(0x00);
 		}
 		else
-		{  	myprintf("\nwhile erase");
+		{  	//myprintf("\nwhile erase");
 		  GPIO_security_cmd(0x01);
 		}
 	}

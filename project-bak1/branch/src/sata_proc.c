@@ -16,7 +16,7 @@
 	      sata.max_lba[3] = 0x08;
 */
 /* END:   Added by huawei, 2013/10/28 */
-void init(u8 mode)
+void init(u8 mode)	//初始化函数，整个程序的入口
 {
     u16 ii;
     //(1)DW8052 setting
@@ -33,7 +33,7 @@ void init(u8 mode)
 	sata.led0_cntl = 0x80;      //rom is using 0xd4  
 
 	//GPIO 安全相关初始化
-	#ifdef GPIO_security
+//	#ifdef GPIO_security
 /*	GPIO_security_cmd(0x00);
 	if(security_erase==show_all)
 		{ 
@@ -48,8 +48,8 @@ void init(u8 mode)
 //	myprintf("\nINIT"); 
 	//GPIO_security_init();
 //	myprintf("\nhello1");
-	g_SYS_YD=0x01;
-	#endif /* GPIO_security */
+//	g_SYS_YD=0x01;
+//	#endif /* GPIO_security */
 	sata.power_cntl = (power_cntl_en_init | power_cntl_en_oob | power_cntl_en_auto_power);
 	if(mode==0x01)
 		sata.power_cntl |= power_cntl_rst_oob;
@@ -83,19 +83,19 @@ void init(u8 mode)
 		    sata.CHP_stripe_h = DEF_CHP_STRIPE_H;
 			
 	#ifdef GPIO_security
-	myprintf("\nhello1");
+	//myprintf("\nhello1");
 	GPIO_security_cmd(0x00);
 	if(security_erase==show_all)
 		{ 
-		myprintf("\ninit erase");
+		//myprintf("\ninit erase");
 		security_cmd_info_write('N', scl_security_nd_chk);//need reconfig
-		myprintf("\nes0");
+		//myprintf("\nes0");
 		intial_data_partition(1);//erase partition
 	  	security_erase=0x00;
-		myprintf("\ned1");
+		//myprintf("\ned1");
 
 	} 	
-    myprintf("\nhello2");
+   // myprintf("\nhello2");
 	#endif 
 
 			SFR_watch_dog_high = 0x00;
@@ -283,7 +283,7 @@ start_phy:
 	//set interrupt enable
     sata.led0_blink = 0xf0;	
 
-    myprintf("\nphyup");
+   // myprintf("\nphyup");
     sata.int2_en |= int2_en_phyrdy_n;
 	
 	sata.int1_status = 0;	//clear other status
@@ -356,7 +356,7 @@ void int0_handler() interrupt 0
 	reset_engine();
 	sata.link_tune |= link_tune_cont_dis;
 	sata.ncq_cntl =  ncq_cntl_block_rdy;
-	sata.rst_cntl = 0x10;   //reset the cpu, reset bit willl be cleared automatically by hardware.
+	sata.rst_cntl = 0x10;   //reset the cpu, reset bit will be cleared automatically by hardware.
 }
 
 ////////////////////////////////////////////////////////////////

@@ -20,6 +20,7 @@ u8 security_mode;
 u8 security_state_flag;
 u8 security_erase;
 u8 uart_show;
+u8 support_backup;
 
 u32_t idata g_cap[4];
 

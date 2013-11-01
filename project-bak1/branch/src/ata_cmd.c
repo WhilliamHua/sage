@@ -522,11 +522,149 @@ chs_write_over:
 	return;
 }
 
+void read_handler_bak()
+{
+    u8 temp_sel, temp8;
+    u8 temp_lba_low;
+	u8 boundary_check;
+	//在此处定义如果支持备份盘的话，在下面写
+#ifdef security_debug
+	enable_fetch_lba;
+	myprintf("\nLBAr0: %x %x %x %x %x %x ",sata.SUP_LBA5,sata.SUP_LBA4,sata.SUP_LBA3,sata.SUP_LBA2,sata.SUP_LBA1,sata.SUP_LBA0);
+	disable_fetch_lba;
+#endif
+
+    //the first coming in will always be considered as not continue
+    //if not continue
+    {
+        security_check_lba();
+        temp_lba_low = sata.SUP_LBA0;
+	 reset_engine_read_write();	//reset_engine and check srst in wait rdy	
+	 if(g_current_fis_num != SFR_fis_num)return;
+		
+#ifdef security_debug
+	enable_fetch_lba;
+	myprintf("\nLBAr1: %x %x %x %x %x %x ",sata.SUP_LBA5,sata.SUP_LBA4,sata.SUP_LBA3,sata.SUP_LBA2,sata.SUP_LBA1,sata.SUP_LBA0);
+	disable_fetch_lba;
+#endif
+
+        sata.CHP_cmd = CHP_CMD_READ;
+        SFR_smart_load = smart_load_chp_cnt | smart_load_sata_cnt;
+        SFR_dma_base = 0x0000;
+        SFR_dma_cntl = 0xdc; //we will enable preread
+        g_cont_en = 1;
+        temp_sel = 0x00;
+		if(STRIPE_8K_SET)boundary_check = 0x0f;
+		else if(STRIPE_4K_SET)boundary_check = 0x07;
+		else boundary_check = 0x03;
+    }
+read_cont:
+    if(SFR_CHP_en == 0x01)
+    {
+        while(!sata_burst_done)
+        {
+            temp8 = SFR_dma_done_num_l;
+            if((((temp_lba_low + temp8) & boundary_check) == 0x00)&& (temp_sel != temp8))//4k  boundary
+            {
+                temp_sel = temp8;
+                sata.CHP_cmd = CHP_CMD_NEXT_BURST;
+            }
+            if(g_current_fis_num != SFR_fis_num)return;
+        }
+    }
+    else //not 1 channel
+    {
+        while(!sata_burst_done)
+        {
+     	    if(temp_sel != sata.chp_bus_sel)
+		    {
+			    sata.CHP_cmd_sel = temp_sel;
+			    sata.CHP_cmd = CHP_CMD_NEXT_BURST;
+			    temp_sel = sata.chp_bus_sel;
+			    sata.CHP_cmd_sel = 0xff;
+     	    }
+		    if(g_current_fis_num != SFR_fis_num)return;
+        }
+    }
+  
+    if(sata_burst_abort)goto read_handler_err;
+    tx_fis_34(status_good,error_no, int_set);
+    if(((sata.CHP0_status_high & 0x80) == 0x80)||((sata.CHP1_status_high & 0x80) == 0x80)||((sata.CHP2_status_high & 0x80) == 0x80)||((sata.CHP3_status_high & 0x80) == 0x80)||((sata.CHP4_status_high & 0x80) == 0x80)) 
+    {
+       goto read_handler_over;
+    }
+    //check whether there is continue command.
+	SFR_watch_dog_high = 0x00;
+    while(1)
+     {
+     	if(SFR_CHP_en != 0x01)
+     	{
+     		if(temp_sel != sata.chp_bus_sel)
+			{
+				sata.CHP_cmd_sel = temp_sel;
+				sata.CHP_cmd = CHP_CMD_NEXT_BURST;
+				temp_sel = sata.chp_bus_sel;
+				sata.CHP_cmd_sel = 0xff;
+     		}
+     	}
+		else
+		{
+			temp8 =  SFR_dma_done_num_l;
+            if((((temp_lba_low + temp8) & 0x07) == 0x00)&& (temp_sel != temp8))//4k  boundary
+            {
+                temp_sel = temp8;
+                sata.CHP_cmd = CHP_CMD_NEXT_BURST;
+            }
+		
+		}
+        if(g_current_fis_num != SFR_fis_num)
+        {
+            //break;
+            //normal_cmd_cont will only be updated when get a new command in RTL.
+            //if it's a FIS27 - Control: normal_cmd_cont will stay in 1
+            if(normal_cmd_cont && g_cont_en && ((SFR_quick_cmd & quick_cmd_read_dma) != 0x00) )
+            {
+                //to fix copy machine
+                delay(1);
+                //////////////////
+                SFR_smart_load = smart_load_add_chp_cnt | smart_load_add_sata_cnt;
+                sata_burst_cont = 1;
+                //dma_cont = 1; //we have set pre-read, so this can be commented
+                g_current_fis_num = SFR_fis_num;  
+                sata.ncq_cntl = (sata.ncq_cntl & (~ncq_cntl_new_fis27));
+                goto read_cont;
+            }
+            else break;
+        }
+        if(SFR_watch_dog_high > 0x20) break;
+    }
+    #ifdef SUPPORT_SMART1
+	smart_read_cnt();
+	#endif
+	goto read_handler_over;	
+	
+read_handler_err:
+    
+    tx_fis_34(status_bad,error_abort,int_set);
+	#ifdef SUPPORT_SMART1
+    updata_smart(smart_crc_num_addr,0x01);
+    #endif
+	//I am not sure host will retry that command immediatelly, need to break the continue mode
+read_handler_over:
+	reset_engine();
+	return;
+}
 void read_handler()
 {
     u8 temp_sel, temp8;
     u8 temp_lba_low;
 	u8 boundary_check;
+	//在此处定义如果支持备份盘的话，在下面写
+#ifdef SUPPORT_BAK
+    support_backup=0x01;
+	read_handler_bak() ;
+	support_backup=0x00;
+#endif
 
 #ifdef security_debug
 	enable_fetch_lba;

@@ -37,7 +37,7 @@
 
 //#define READ_ONLY
 #define SUPER_ERASE
-
+#define SUPPORT_BAK//定义支持备份功能
 #define SUPPORT_SMART
 #define SUPPORT_SMART1
 #define SUPPORT_TRIM

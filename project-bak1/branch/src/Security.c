@@ -625,23 +625,41 @@ void unlock_partion()
 void choose_lba()
 {
     u8 temp_lba,temp_lba2;
+//如果定义了SUPPORT_BAK则进行地址偏移，选择第二个盘
+#ifdef SUPPORT_BAK
+	if(support_backup == 0x01) 
+     {   enable_fetch_lba;
+        temp_lba = sata.SUP_LBA3;
+		temp_lba2 = sata.SUP_LBA2;
+        disable_fetch_lba;
+		sata.SUP_LBA3 = temp_lba + 0x08;
+		sata.SUP_LBA2 = temp_lba2 + 0xc0;
+	//else if(security_mode == show_user) 
+    //sata.SUP_LBA3 = temp_lba + 0x01;
+	
+#ifdef security_debug		
+		enable_fetch_lba;
+	  //myprintf("csLBA:%x", sata.SUP_LBA3);
+		disable_fetch_lba;
+#endif
+ 	} 
+#endif
 	 if(security_mode == show_master) 
      {   enable_fetch_lba;
         temp_lba = sata.SUP_LBA3;
 		temp_lba2 = sata.SUP_LBA2;
         disable_fetch_lba;
-
-      	  sata.SUP_LBA3 = temp_lba + 0x08;
-		   sata.SUP_LBA2 = temp_lba2 + 0xc0;
+		sata.SUP_LBA3 = temp_lba + 0x08;
+		sata.SUP_LBA2 = temp_lba2 + 0xc0;
 	//else if(security_mode == show_user) 
-	  //sata.SUP_LBA3 = temp_lba + 0x01;
+	//sata.SUP_LBA3 = temp_lba + 0x01;
 	
 #ifdef security_debug		
 		enable_fetch_lba;
-	myprintf("csLBA:%x", sata.SUP_LBA3);
+	//  myprintf("csLBA:%x", sata.SUP_LBA3);
 		disable_fetch_lba;
 #endif
- }    	
+ 	}    	
     return;
 }
 
